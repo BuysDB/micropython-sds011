@@ -20,9 +20,9 @@ while True:
     #Stop fan
     dust_sensor.sleep()
 
-    if(status == 'NOK'):
+    if(status == False):
         print('Measurement failed.')
-    elif(pkt_status == 'NOK'):
+    elif(pkt_status == False):
         print('Received corrupted data.')
     else:
         print('PM25: ', dust_sensor.pm25)
